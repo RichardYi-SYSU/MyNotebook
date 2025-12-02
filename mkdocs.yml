@@ -1,4 +1,54 @@
 site_name: RichardYi's NoteBook
 site_url: https://127.0.0.1:8000
+markdown_extensions:
+  - pymdownx.highlight:
+      linenums_style: pymdownx.inline
+      linenums: false
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - javascripts/config.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+copyright: Copyright &copy; 2025 RichardYi
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/richardyi-sysu
+      name: Github Profile
+    - icon: fontawesome/brands/bilibili
+      link: https://space.bilibili.com/104113203
+      name: Bilibili Homepage
+
 theme:
   name: material
+  features:
+    - content.code.copy
+    - navigation.footer
+
+plugins:
+ - glightbox:
+     touchNavigation: true
+     loop: false
+     effect: fade
+     slide_effect: slide
+     width: 100%
+     height: auto
+     zoomable: true
+     draggable: true
+     skip_classes:
+       - custom-skip-class-name
+     auto_caption: false
+     caption_position: bottom
+     background: white
+     shadow: true
+     manual: false
