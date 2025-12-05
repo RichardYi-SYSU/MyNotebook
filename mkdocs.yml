@@ -9,7 +9,11 @@ markdown_extensions:
       pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:mermaid2.fence_mermaid_custom
   - pymdownx.arithmatex:
       generic: true
 
@@ -65,5 +69,8 @@ plugins:
      background: white
      shadow: true
      manual: false
+  - mermaid2:
+      version: 10.0.2
+
 
 
