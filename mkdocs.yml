@@ -1,6 +1,8 @@
 site_name: RichardYi's NoteBook
 site_url: https://127.0.0.1:8000
 markdown_extensions:
+  - admonition
+  - pymdownx.details
   - pymdownx.highlight:
       linenums_style: pymdownx.inline
       linenums: false
@@ -16,6 +18,8 @@ markdown_extensions:
           format: !!python/name:mermaid2.fence_mermaid_custom
   - pymdownx.arithmatex:
       generic: true
+  - toc:
+      permalink: true
 
 extra_javascript:
   - javascripts/config.js
