@@ -8,4 +8,4 @@
 
     - [数据结构](./计算机科学与技术/数据结构/index.md)
     - [计算机组成原理](./计算机科学与技术/计算机组成原理/index.md)
-![bangdream](bangdream.jpg)
+![newyear](newyr26.jpg)
